@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Survey form</title>
+</head>
+
+<body>
+    <section class="survey-section">
+        <div class="survey-container container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Life insurance service survey</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                        required="" />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                        required="" />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Number</label>
+                    <input type="number" min="9" max="10" name="number" id="number" class="form-control"
+                        placeholder="Enter your number" required="" />
+                </div>
+                <div class="form-group">
+                    <p>What is your marital status??</p>
+                    <select id="dropdown" name="role" class="form-control" required="">
+                        <option disabled="" selected="" value="">
+                            Select currenT status
+                        </option>
+                        <option value="student">Married</option>
+                        <option value="job">Single</option>
+                        <option value="learner">Divorced</option>
+                        <option value="preferNo">Widower</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-options">
+                    <p>Would you recommend our life insurance to a friend?</p>
+                    <label class="mt-lbl">
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                            checked="" />Definitely</label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not
+                        sure</label>
+                </div>
+                <div class="form-group form-group-options">
+                    <p>
+                        What would you like to see improved?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label class="mt-lbl">
+                        <input name="prefer" value="customer-support" type="checkbox" class="input-checkbox" />Customer
+                        Support</label>
+                    <label><input name="prefer" value="insurance plans" type="checkbox" class="input-checkbox" />More
+                        insurance plans</label>
+                    <label><input name="prefer" value="web-page" type="checkbox" class="input-checkbox" />Web
+                        page</label>
+                    <label><input name="prefer" value="movile-app" type="checkbox" class="input-checkbox" />Mobile
+                        app</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+                  </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

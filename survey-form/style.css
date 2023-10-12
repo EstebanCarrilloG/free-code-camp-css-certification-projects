@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: linear-gradient(0deg, #474753, #071227);
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,p{
+
+    margin-bottom: 0.4rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 5rem 0;
+}
+.survey-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+#survey-form {
+  display: grid;
+  gap: 1rem;
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  .form-group {
+    display: grid;
+    & input:not([type="radio"], [type="checkbox"]),
+    select {
+      padding: 0.5rem 1rem;
+      background: rgb(236, 236, 235);
+      outline: none;
+      border: none;
+      border-radius: 0.25rem;
+    }
+    & [type="radio"],
+    [type="checkbox"] {
+      margin-bottom: 0.6rem;
+    }
+    & [type="radio"] + label {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+  .form-group-options label {
+    display: flex;
+    gap: 0.4rem;
+  }
+}
