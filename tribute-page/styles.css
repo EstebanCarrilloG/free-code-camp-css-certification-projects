@@ -29,9 +29,12 @@ h1{
 #img-div {
   background: white;
   padding: 0.4rem 0.4rem 1rem 0.4rem;
+  margin: 0 auto;
   & img {
+    max-width: 100%;
     width: 100%;
     height: auto;
+    display:block;
   }
   & #img-caption {
     padding-top: 1rem;
