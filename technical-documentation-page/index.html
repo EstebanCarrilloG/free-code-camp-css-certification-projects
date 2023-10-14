@@ -4,8 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <nav id="navbar">
+      <header>Documentacion de Python</header>
+      <ul>
+        <li><a href="#introduccion">Introduccion</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li>
+          <a href="#razones_para_aprender_python"
+            >Razones para aprender python</a
+          >
+        </li>
+        <li><a href="#hola_mundo">Hola mundo</a></li>
+        <li><a href="#variables_en_python">Variables en Python</a></li>
+        <li>
+          <a href="#asignar_valor_a_variable">Asignar valor a variable</a>
+        </li>
+      </ul>
+    </nav>
     <main id="main-doc">
       <section class="main-section" id="introduccion">
         <header>Introduccion:</header>
@@ -69,7 +87,18 @@
           </p>
         </article>
       </section>
-      <section class="main-section" id="historia">
+      <section class="main-section" id="razones_para_aprender_python">
+        <header>Razones para Aprender a programar en Python</header>
+        <article>
+          <ul>
+            <li>Sencillez de código e interpretación</li>
+            <li>Comunidad y código abierto</li>
+            <li>Popularidad y uso a nivel mundial</li>
+            <li>Versatilidad</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="hola_mundo">
         <header>Hola mundo:</header>
         <article>
           <p>
@@ -88,7 +117,7 @@
       </section>
       <section class="main-section" id="variables_en_python">
         <header>Variables en Python</header>
-        <main>
+        <article>
           <p>
             Las variables son uno de los dos componentes básicos de cualquier
             programa.
@@ -113,15 +142,21 @@
             variable:
           </p>
           <code>
-            # Guardamos en la variable suma el resultado de 1 + 2 suma = 1 + 2
-            #Accedemos al resultado de 1 + 2 a través de la variable suma
+            <span class="code-comment"
+              >#Guardamos en la variable suma el resultado de 1 + 2</span
+            ><br />
+            suma = 1 + 2<br />
+            <span class="code-comment"
+              >#Accedemos al resultado de 1 + 2 a través de la variable
+              suma</span
+            ><br />
             print(suma)
           </code>
-        </main>
+        </article>
       </section>
-      <section class="main-section" id="">
+      <section class="main-section" id="asignar_valor_a_variable">
         <header>Asignar un valor a una variable en Python</header>
-        <main>
+        <article>
           <p>
             Tal y como hemos visto en el ejemplo anterior, para asignar un valor
             (un dato) a una variable se utiliza el operador de asignación =.
@@ -140,12 +175,22 @@
 
           <p>Elemplos:</p>
           <code>
-            # Asigna a la variable &lt;a&gt; el valor 1 a = 1 
-            # Asigna a la variable &lt;a&gt; el resultado de la expresión 3 * 4 a = 3 * 4 
-            #Asigna a la variable &lt;a&gt; la cadena de caracteres 'Pythonista'
+            <span class="code-comment"
+              ># Asigna a la variable &lt;a&gt; el valor 1</span
+            ><br />
+            a = 1 <br />
+            <span class="code-comment"
+              ># Asigna a la variable &lt;a&gt; el resultado de la expresión 3 *
+              4</span
+            ><br />
+            a = 3 * 4<br />
+            <span class="code-comment"
+              >#Asigna a la variable &lt;a&gt; la cadena de caracteres
+              'Pythonista'</span
+            ><br />
             a = 'Pythonista'
           </code>
-        </main>
+        </article>
       </section>
     </main>
   </body>
