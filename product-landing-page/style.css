@@ -1,115 +1,129 @@
-:root{
-    --color-1:rgb(0, 0, 0);
-    --color-2:rgb(240, 240, 240);
-    --color-3:rgb(224, 184, 51);
-    --header-height:3.6rem;
+:root {
+  --color-1: rgb(0, 0, 0);
+  --color-2: rgb(240, 240, 240);
+  --color-3: rgb(224, 184, 51);
+  --header-height: 3.6rem;
+  --box-shadow-md: 0 0 6px -2px ;
+  --box-shadow-c1:gray;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
-}
-
-.container{
-    max-width: 1300px;
-    width: 90%;
-    margin: 0 auto;
-    
-}
-h1,h2,h3,h4,h5,h6{
-    margin-bottom: 0.5rem;
-    color: var(--color-1);
-}
-section{
-    padding: calc(var(--header-height) + 2rem) 0 3rem 0;
-    border-top: 1px solid var(--color-3);
+body {
+  font-family: sans-serif;
 }
 
-#header{
-    height: var(--header-height);
+.container {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  color: var(--color-1);
+}
+section {
+  padding: calc(var(--header-height) + 2rem) 0 3rem 0;
+  border-top: 1px solid var(--color-3);
+}
+
+#header {
+  background: var(--color-2);
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  .header-container {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    #header-img {
+      width: 15rem;
+    }
+    #nav-bar {
+      display: flex;
+      gap: 1rem;
+      .nav-link {
+        text-decoration: none;
+        color: var(--color-3);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#main {
+  #servicios {
+    display: grid;
+    gap: 3rem;
+    text-align: center;
+    .main-hr{
+        width: 100%;
+        height: 0.07rem;
+        background:var(--color-2);
+    }
+  }
+  #Video {
     background: var(--color-2);
-    top: 0px;
-    position: fixed;
-    width: 100%;
-    .header-container{
-        padding:1rem;
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        #header-img{
-            width:15rem
-        }
-        #nav-bar{
-            display: flex;
-            gap: 1rem;
-            .nav-link{
-                text-decoration: none;
-                color: var(--color-3);
-                font-weight: bold;
-            }
-        }
-    }
-}
-
-#main{
     
-    #servicios{
-        display: grid;
+    .container {
+        box-shadow: 0 0 31px -2px var(--color-3);
+        max-width: 40rem;
+        height: auto;
+      & iframe {
+        width: 100%;
+      }
+    }
+  }
+  #Precios {
+    text-align: center;
+    .container {
+        & h2{
+            margin-bottom:3rem ;
+        }
+      .servicios-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 1.5rem;
-        text-align: center;
-        .container{
-            box-shadow: 0 0 6px -2px gray;
-            border-radius: 0.5rem;
+        .servicio {
+          width: 13.5rem;
+          word-wrap: break-word;
+          padding: 1rem;
+          box-shadow: var(--box-shadow-md) var(--box-shadow-c1);
+          & p:nth-child(1) {
+            padding-top: 3rem;
+          }
+          .precio {
+            font-size: 3rem;
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+          }
+          & p:nth-child(3) {
+            margin-bottom: 1rem;
+          }
+          & a {
+            display: block;
+            text-decoration: none;
+            background: var(--color-3);
+            color: white;
             padding: 1rem 1.5rem;
+          }
         }
-        
-    }
-    #Video{
-        background: var(--color-2);
-        .container{
-            & iframe{
-                width: 100%;
-            }
+        .servicio:nth-child(2){
+        border:2px solid var(--color-3);
+        transform: scale(1.1);
         }
+      }
     }
-    #Precios{
-        .container{
-            .servicios-container{
-                display: flex;
-                flex-wrap: wrap;
-                gap:1rem;
-                .servicio{
-                    text-align: center;
-                    width: 14rem;
-                    word-wrap: break-word;
-                    padding: 1rem;
-                    background: gray;
-                    & p:nth-child(1){
-                        padding-top: 3rem;
-
-                    }
-                    .precio{
-                        font-size: 3rem;
-                        padding-top: 1rem;
-                       padding-bottom: 3rem;
-                    }
-                    & p:nth-child(3){
-                        padding-bottom: 1rem;
-                    }
-                    & a{
-                        margin-top: 2rem;
-                        text-decoration: none;
-                        background: red;
-                        padding: 1rem 1.5rem;
-                    }
-                }
-            }
-
-        }
-    }
+  }
 }
