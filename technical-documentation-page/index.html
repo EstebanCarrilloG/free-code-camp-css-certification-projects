@@ -9,24 +9,26 @@
   <body>
     <nav id="navbar">
       <header>Documentacion de Python</header>
-      <ul>
-        <li><a href="#introduccion">Introduccion</a></li>
-        <li><a href="#historia">Historia</a></li>
-        <li>
-          <a href="#razones_para_aprender_python"
-            >Razones para aprender python</a
-          >
-        </li>
-        <li><a href="#hola_mundo">Hola mundo</a></li>
-        <li><a href="#variables_en_python">Variables en Python</a></li>
-        <li>
-          <a href="#asignar_valor_a_variable">Asignar valor a variable</a>
-        </li>
-      </ul>
+      <div class="navbar-links-container">
+        <a class="nav-link" href="#Introduccion">Introduccion</a>
+        <a class="nav-link" href="#Historia">Historia</a>
+        <a class="nav-link" href="#Razones_para_Aprender_a_programar_en_Python"
+          >Razones para Aprender a programar en Python</a
+        >
+        <a class="nav-link" href="#Hola_mundo">Hola mundo</a>
+        <a class="nav-link" href="#Variables_en_Python">Variables en Python</a>
+        <a class="nav-link" href="#Asignar_un_valor_a_una_variable_en_Python"
+          >Asignar un valor a una variable en Python</a
+        >
+        <a class="nav-link" href="#Definir_una_variable"
+          >Definir una variable</a
+        >
+        
+      </div>
     </nav>
     <main id="main-doc">
-      <section class="main-section" id="introduccion">
-        <header>Introduccion:</header>
+      <section class="main-section" id="Introduccion">
+        <header>Introduccion</header>
         <article>
           <p>
             Python es un lenguaje de alto nivel de programación interpretado
@@ -46,8 +48,8 @@
           </p>
         </article>
       </section>
-      <section class="main-section" id="historia">
-        <header>Historia:</header>
+      <section class="main-section" id="Historia">
+        <header>Historia</header>
         <article>
           <p>
             Python es uno de los lenguajes de programación dinámicos más
@@ -87,7 +89,10 @@
           </p>
         </article>
       </section>
-      <section class="main-section" id="razones_para_aprender_python">
+      <section
+        class="main-section"
+        id="Razones_para_Aprender_a_programar_en_Python"
+      >
         <header>Razones para Aprender a programar en Python</header>
         <article>
           <ul>
@@ -98,8 +103,8 @@
           </ul>
         </article>
       </section>
-      <section class="main-section" id="hola_mundo">
-        <header>Hola mundo:</header>
+      <section class="main-section" id="Hola_mundo">
+        <header>Hola mundo</header>
         <article>
           <p>
             Lo que vamos a hacer es crear un fichero que llamaremos holamundo.py
@@ -115,7 +120,7 @@
           <code> print ("Hola Mundo") </code>
         </article>
       </section>
-      <section class="main-section" id="variables_en_python">
+      <section class="main-section" id="Variables_en_Python">
         <header>Variables en Python</header>
         <article>
           <p>
@@ -154,7 +159,10 @@
           </code>
         </article>
       </section>
-      <section class="main-section" id="asignar_valor_a_variable">
+      <section
+        class="main-section"
+        id="Asignar_un_valor_a_una_variable_en_Python"
+      >
         <header>Asignar un valor a una variable en Python</header>
         <article>
           <p>
@@ -189,6 +197,34 @@
               'Pythonista'</span
             ><br />
             a = 'Pythonista'
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Definir_una_variable">
+        <header>Definir una variable</header>
+        <article>
+          <p>
+            Las variables en Python se crean cuando se definen por primera vez,
+            es decir, cuando se les asigna un valor por primera vez. Para
+            asignar un valor a una variable se utiliza el operador de igualdad
+            (=). A la izquierda de la igualdad se escribe el nombre de la
+            variable y a la derecha el valor que se quiere dar a la variable.
+          </p>
+          <p>
+            En el ejemplo siguiente se almacena el número decimal 2.5 en una
+            variable de nombre x (como se comenta en el apartado anterior,
+            realmente habría que decir que se crea la etiqueta x para hacer
+            referencia al objeto número decimal 2.5). Fíjese en que los números
+            decimales se escriben con punto (.) y no con coma (,).
+          </p>
+          <code> >>> x = 2.5 </code>
+          <p>
+            La variable se escribe siempre a la izquierda de la igualdad. Si se
+            escribe al revés, Python genera un mensaje de error:
+          </p>
+          <code>
+            >>> 2.5 = x<br />
+            SyntaxError: can't assign to literal
           </code>
         </article>
       </section>
