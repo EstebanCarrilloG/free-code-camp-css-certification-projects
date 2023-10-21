@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-1: rgb(59, 183, 199);
+  --color-2: rgb(241, 48, 48);
+  --color-3: rgb(73, 134, 76);
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  background: var(--color-1);
+  color: white;
+  .header-container {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & p {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    & nav {
+      display: flex;
+      gap: 1rem;
+      & a {
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.main {
+  #welcome-section {
+    background: var(--color-3);
+    .container {
+      height: 100vh;
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  #projects{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
